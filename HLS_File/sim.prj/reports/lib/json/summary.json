@@ -1,0 +1,155 @@
+{
+  "functionNameMapping":
+  {
+    "name":"Synthesized Function Name Mapping"
+    , "columns":
+    ["User-defined Function Name", "Mapped Function Name"]
+    , "children":
+    [
+      {
+        "name":"SDF_HLS_component()"
+        , "data":
+        ["SDF_HLS_component"]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+              , "line":89
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"void ihc::internal::launch_always_run<task_3()>()"
+        , "data":
+        ["ihc"]
+        , "debug":
+        [
+          [
+            {
+              "filename":""
+              , "line":0
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"void ihc::internal::launch_always_run<task_2()>()"
+        , "data":
+        ["ihc_1"]
+        , "debug":
+        [
+          [
+            {
+              "filename":""
+              , "line":0
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"void ihc::internal::launch_always_run<task_1()>()"
+        , "data":
+        ["ihc_2"]
+        , "debug":
+        [
+          [
+            {
+              "filename":""
+              , "line":0
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Function Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"SDF_HLS_component"
+        , "data":
+        [23, 13, 0, 0, 0]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+              , "line":89
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"ihc"
+        , "data":
+        [168, 187, 0, 0, 1]
+        , "debug":
+        [
+          [
+            {
+              "filename":""
+              , "line":0
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"ihc_1"
+        , "data":
+        [162, 219, 0, 0, 2]
+        , "debug":
+        [
+          [
+            {
+              "filename":""
+              , "line":0
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"ihc_2"
+        , "data":
+        [334, 596, 0, 0, 5]
+        , "debug":
+        [
+          [
+            {
+              "filename":""
+              , "line":0
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [687, 1015, 0, 0, 8]
+        , "data_percent":
+        [0.626985, 0.463166, 0, 0]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [109572, 219144, 514, 112, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+    ]
+  }
+}

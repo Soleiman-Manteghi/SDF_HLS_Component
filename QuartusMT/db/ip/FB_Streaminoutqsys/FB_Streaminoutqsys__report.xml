@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2023.09.12.00:20:53"
+ outputDirectory="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CSEBA6U23I7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="streaminout_0_a" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="32" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="false" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="streaminout_0_a_data" direction="input" role="data" width="32" />
+   <port
+       name="streaminout_0_a_ready"
+       direction="output"
+       role="ready"
+       width="1" />
+   <port name="streaminout_0_a_valid" direction="input" role="valid" width="1" />
+  </interface>
+  <interface name="streaminout_0_call" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <port
+       name="streaminout_0_call_valid"
+       direction="input"
+       role="valid"
+       width="1" />
+   <port
+       name="streaminout_0_call_stall"
+       direction="output"
+       role="stall"
+       width="1" />
+  </interface>
+  <interface name="streaminout_2_b" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="32" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="false" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="streaminout_2_b_data" direction="output" role="data" width="32" />
+   <port name="streaminout_2_b_ready" direction="input" role="ready" width="1" />
+   <port
+       name="streaminout_2_b_valid"
+       direction="output"
+       role="valid"
+       width="1" />
+  </interface>
+  <interface name="streaminout_2_return" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <port
+       name="streaminout_2_return_valid"
+       direction="output"
+       role="valid"
+       width="1" />
+   <port
+       name="streaminout_2_return_stall"
+       direction="input"
+       role="stall"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="FB_Streaminoutqsys:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEBA6U23I7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1694461852,AUTO_UNIQUE_ID=(FB_Streaminout:1.0:AUTO_CLOCK_CLOCK_DOMAIN=1,AUTO_CLOCK_CLOCK_RATE=50000000,AUTO_CLOCK_RESET_DOMAIN=1,AUTO_DEVICE=5CSEBA6U23I7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1694461852,AUTO_UNIQUE_ID=FB_Streaminoutqsys_Streaminout_0(FB_Streaminout_internal:1.0:))(FB_Streaminout:1.0:AUTO_CLOCK_CLOCK_DOMAIN=1,AUTO_CLOCK_CLOCK_RATE=50000000,AUTO_CLOCK_RESET_DOMAIN=1,AUTO_DEVICE=5CSEBA6U23I7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1694461852,AUTO_UNIQUE_ID=FB_Streaminoutqsys_Streaminout_1(FB_Streaminout_internal:1.0:))(FB_Streaminout:1.0:AUTO_CLOCK_CLOCK_DOMAIN=1,AUTO_CLOCK_CLOCK_RATE=50000000,AUTO_CLOCK_RESET_DOMAIN=1,AUTO_DEVICE=5CSEBA6U23I7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1694461852,AUTO_UNIQUE_ID=FB_Streaminoutqsys_Streaminout_2(FB_Streaminout_internal:1.0:))(clock_source:22.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(avalon_streaming:22.1:)(avalon_streaming:22.1:)(clock:22.1:)(clock:22.1:)(clock:22.1:)(conduit:22.1:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:22.1:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(reset:22.1:)(reset:22.1:)(reset:22.1:)"
+   instancePathKey="FB_Streaminoutqsys"
+   kind="FB_Streaminoutqsys"
+   version="1.0"
+   name="FB_Streaminoutqsys">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1694461852" />
+  <parameter name="AUTO_DEVICE" value="5CSEBA6U23I7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/FB_Streaminoutqsys.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminoutqsys_Streaminout_0.v"
+       type="VERILOG" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/dspba_library_ver.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_data_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_altera_syncram_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_scfifo_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_decoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_encoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_ram_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_staging_reg.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mid_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_one_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_zero_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo_zero_width.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_high_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_low_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_zero_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fanout_pipeline.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_std_synchronizer_nocut.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_decr_threshold.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_lookahead.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_handler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_lfsr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mlab_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_parameter_assert.svh"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pop.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_push.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_token_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pipeline.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_buffer.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_enable_sink.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_memory_depth_quantization_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_shift_register_no_reset.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_loop_profiler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_sim_latency_tracker.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_wire.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function_wrapper.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000mpop_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000_fb_streaminout0_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000push_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000_fb_streaminout1_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_a_unnamed_fb_st0000out3_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_call_fb_streami0000out2_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_b_unnamed_fb_st0000out4_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_return_fb_strea0000out5_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_s_c0_in_wt_entry_fb0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_sfc_exit_s_c00000exit_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_logic_s_c0_in_wt_en0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep_going_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_i1_notexitcond_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000g_fb_streaminout1_sr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000eaminout1_valid_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_internal.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminoutqsys_Streaminout_1.v"
+       type="VERILOG" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminoutqsys_Streaminout_2.v"
+       type="VERILOG" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminoutqsys.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout.qsys" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout_internal_hw.tcl" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout.qsys" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout_internal_hw.tcl" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout.qsys" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout_internal_hw.tcl" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/22.1std/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 0 starting:FB_Streaminoutqsys "FB_Streaminoutqsys"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>4</b> modules, <b>10</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>5</b> modules, <b>12</b> connections]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys"><![CDATA["<b>FB_Streaminoutqsys</b>" reuses <b>FB_Streaminout</b> "<b>submodules/FB_Streaminoutqsys_Streaminout_0</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys"><![CDATA["<b>FB_Streaminoutqsys</b>" reuses <b>FB_Streaminout</b> "<b>submodules/FB_Streaminoutqsys_Streaminout_1</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys"><![CDATA["<b>FB_Streaminoutqsys</b>" reuses <b>FB_Streaminout</b> "<b>submodules/FB_Streaminoutqsys_Streaminout_2</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys"><![CDATA["<b>FB_Streaminoutqsys</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:FB_Streaminout "submodules/FB_Streaminoutqsys_Streaminout_0"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Streaminout_0"><![CDATA["<b>Streaminout_0</b>" reuses <b>FB_Streaminout_internal</b> "<b>submodules/FB_Streaminout_internal</b>"]]></message>
+   <message level="Info" culprit="Streaminout_0"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>FB_Streaminout</b> "<b>Streaminout_0</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 2 starting:FB_Streaminout_internal "submodules/FB_Streaminout_internal"</message>
+   <message level="Info" culprit="FB_Streaminout_internal_inst"><![CDATA["<b>Streaminout_0</b>" instantiated <b>FB_Streaminout_internal</b> "<b>FB_Streaminout_internal_inst</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:FB_Streaminout "submodules/FB_Streaminoutqsys_Streaminout_1"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Streaminout_1"><![CDATA["<b>Streaminout_1</b>" reuses <b>FB_Streaminout_internal</b> "<b>submodules/FB_Streaminout_internal</b>"]]></message>
+   <message level="Info" culprit="Streaminout_1"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>FB_Streaminout</b> "<b>Streaminout_1</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 2 starting:FB_Streaminout_internal "submodules/FB_Streaminout_internal"</message>
+   <message level="Info" culprit="FB_Streaminout_internal_inst"><![CDATA["<b>Streaminout_0</b>" instantiated <b>FB_Streaminout_internal</b> "<b>FB_Streaminout_internal_inst</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:FB_Streaminout "submodules/FB_Streaminoutqsys_Streaminout_2"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Streaminout_2"><![CDATA["<b>Streaminout_2</b>" reuses <b>FB_Streaminout_internal</b> "<b>submodules/FB_Streaminout_internal</b>"]]></message>
+   <message level="Info" culprit="Streaminout_2"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>FB_Streaminout</b> "<b>Streaminout_2</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 2 starting:FB_Streaminout_internal "submodules/FB_Streaminout_internal"</message>
+   <message level="Info" culprit="FB_Streaminout_internal_inst"><![CDATA["<b>Streaminout_0</b>" instantiated <b>FB_Streaminout_internal</b> "<b>FB_Streaminout_internal_inst</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="FB_Streaminout:1.0:AUTO_CLOCK_CLOCK_DOMAIN=1,AUTO_CLOCK_CLOCK_RATE=50000000,AUTO_CLOCK_RESET_DOMAIN=1,AUTO_DEVICE=5CSEBA6U23I7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1694461852,AUTO_UNIQUE_ID=FB_Streaminoutqsys_Streaminout_0(FB_Streaminout_internal:1.0:)"
+   instancePathKey="FB_Streaminoutqsys:.:Streaminout_0"
+   kind="FB_Streaminout"
+   version="1.0"
+   name="FB_Streaminoutqsys_Streaminout_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_GENERATION_ID" value="1694461852" />
+  <parameter name="AUTO_DEVICE" value="5CSEBA6U23I7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_UNIQUE_ID" value="FB_Streaminoutqsys_Streaminout_0" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminoutqsys_Streaminout_0.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/dspba_library_ver.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_data_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_altera_syncram_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_scfifo_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_decoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_encoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_ram_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_staging_reg.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mid_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_one_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_zero_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo_zero_width.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_high_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_low_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_zero_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fanout_pipeline.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_std_synchronizer_nocut.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_decr_threshold.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_lookahead.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_handler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_lfsr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mlab_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_parameter_assert.svh"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pop.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_push.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_token_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pipeline.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_buffer.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_enable_sink.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_memory_depth_quantization_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_shift_register_no_reset.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_loop_profiler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_sim_latency_tracker.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_wire.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function_wrapper.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000mpop_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000_fb_streaminout0_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000push_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000_fb_streaminout1_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_a_unnamed_fb_st0000out3_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_call_fb_streami0000out2_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_b_unnamed_fb_st0000out4_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_return_fb_strea0000out5_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_s_c0_in_wt_entry_fb0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_sfc_exit_s_c00000exit_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_logic_s_c0_in_wt_en0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep_going_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_i1_notexitcond_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000g_fb_streaminout1_sr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000eaminout1_valid_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_internal.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout_internal_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="FB_Streaminoutqsys" as="Streaminout_0" />
+  <messages>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:FB_Streaminout "submodules/FB_Streaminoutqsys_Streaminout_0"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Streaminout_0"><![CDATA["<b>Streaminout_0</b>" reuses <b>FB_Streaminout_internal</b> "<b>submodules/FB_Streaminout_internal</b>"]]></message>
+   <message level="Info" culprit="Streaminout_0"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>FB_Streaminout</b> "<b>Streaminout_0</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 2 starting:FB_Streaminout_internal "submodules/FB_Streaminout_internal"</message>
+   <message level="Info" culprit="FB_Streaminout_internal_inst"><![CDATA["<b>Streaminout_0</b>" instantiated <b>FB_Streaminout_internal</b> "<b>FB_Streaminout_internal_inst</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="FB_Streaminout:1.0:AUTO_CLOCK_CLOCK_DOMAIN=1,AUTO_CLOCK_CLOCK_RATE=50000000,AUTO_CLOCK_RESET_DOMAIN=1,AUTO_DEVICE=5CSEBA6U23I7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1694461852,AUTO_UNIQUE_ID=FB_Streaminoutqsys_Streaminout_1(FB_Streaminout_internal:1.0:)"
+   instancePathKey="FB_Streaminoutqsys:.:Streaminout_1"
+   kind="FB_Streaminout"
+   version="1.0"
+   name="FB_Streaminoutqsys_Streaminout_1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_GENERATION_ID" value="1694461852" />
+  <parameter name="AUTO_DEVICE" value="5CSEBA6U23I7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_UNIQUE_ID" value="FB_Streaminoutqsys_Streaminout_1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminoutqsys_Streaminout_1.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/dspba_library_ver.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_data_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_altera_syncram_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_scfifo_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_decoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_encoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_ram_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_staging_reg.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mid_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_one_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_zero_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo_zero_width.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_high_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_low_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_zero_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fanout_pipeline.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_std_synchronizer_nocut.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_decr_threshold.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_lookahead.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_handler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_lfsr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mlab_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_parameter_assert.svh"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pop.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_push.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_token_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pipeline.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_buffer.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_enable_sink.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_memory_depth_quantization_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_shift_register_no_reset.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_loop_profiler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_sim_latency_tracker.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_wire.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function_wrapper.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000mpop_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000_fb_streaminout0_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000push_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000_fb_streaminout1_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_a_unnamed_fb_st0000out3_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_call_fb_streami0000out2_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_b_unnamed_fb_st0000out4_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_return_fb_strea0000out5_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_s_c0_in_wt_entry_fb0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_sfc_exit_s_c00000exit_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_logic_s_c0_in_wt_en0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep_going_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_i1_notexitcond_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000g_fb_streaminout1_sr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000eaminout1_valid_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_internal.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout_internal_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="FB_Streaminoutqsys" as="Streaminout_1" />
+  <messages>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:FB_Streaminout "submodules/FB_Streaminoutqsys_Streaminout_1"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Streaminout_1"><![CDATA["<b>Streaminout_1</b>" reuses <b>FB_Streaminout_internal</b> "<b>submodules/FB_Streaminout_internal</b>"]]></message>
+   <message level="Info" culprit="Streaminout_1"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>FB_Streaminout</b> "<b>Streaminout_1</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 2 starting:FB_Streaminout_internal "submodules/FB_Streaminout_internal"</message>
+   <message level="Info" culprit="FB_Streaminout_internal_inst"><![CDATA["<b>Streaminout_0</b>" instantiated <b>FB_Streaminout_internal</b> "<b>FB_Streaminout_internal_inst</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="FB_Streaminout:1.0:AUTO_CLOCK_CLOCK_DOMAIN=1,AUTO_CLOCK_CLOCK_RATE=50000000,AUTO_CLOCK_RESET_DOMAIN=1,AUTO_DEVICE=5CSEBA6U23I7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1694461852,AUTO_UNIQUE_ID=FB_Streaminoutqsys_Streaminout_2(FB_Streaminout_internal:1.0:)"
+   instancePathKey="FB_Streaminoutqsys:.:Streaminout_2"
+   kind="FB_Streaminout"
+   version="1.0"
+   name="FB_Streaminoutqsys_Streaminout_2">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_GENERATION_ID" value="1694461852" />
+  <parameter name="AUTO_DEVICE" value="5CSEBA6U23I7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_UNIQUE_ID" value="FB_Streaminoutqsys_Streaminout_2" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminoutqsys_Streaminout_2.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/dspba_library_ver.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_data_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_altera_syncram_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_scfifo_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_decoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_encoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_ram_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_staging_reg.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mid_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_one_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_zero_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo_zero_width.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_high_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_low_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_zero_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fanout_pipeline.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_std_synchronizer_nocut.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_decr_threshold.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_lookahead.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_handler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_lfsr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mlab_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_parameter_assert.svh"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pop.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_push.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_token_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pipeline.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_buffer.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_enable_sink.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_memory_depth_quantization_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_shift_register_no_reset.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_loop_profiler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_sim_latency_tracker.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_wire.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function_wrapper.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000mpop_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000_fb_streaminout0_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000push_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000_fb_streaminout1_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_a_unnamed_fb_st0000out3_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_call_fb_streami0000out2_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_b_unnamed_fb_st0000out4_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_return_fb_strea0000out5_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_s_c0_in_wt_entry_fb0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_sfc_exit_s_c00000exit_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_logic_s_c0_in_wt_en0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep_going_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_i1_notexitcond_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000g_fb_streaminout1_sr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000eaminout1_valid_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_internal.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout_internal_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="FB_Streaminoutqsys" as="Streaminout_2" />
+  <messages>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:FB_Streaminout "submodules/FB_Streaminoutqsys_Streaminout_2"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Streaminout_2"><![CDATA["<b>Streaminout_2</b>" reuses <b>FB_Streaminout_internal</b> "<b>submodules/FB_Streaminout_internal</b>"]]></message>
+   <message level="Info" culprit="Streaminout_2"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>FB_Streaminout</b> "<b>Streaminout_2</b>"]]></message>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 2 starting:FB_Streaminout_internal "submodules/FB_Streaminout_internal"</message>
+   <message level="Info" culprit="FB_Streaminout_internal_inst"><![CDATA["<b>Streaminout_0</b>" instantiated <b>FB_Streaminout_internal</b> "<b>FB_Streaminout_internal_inst</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:22.1:ADAPT_RESET_REQUEST=0,MIN_RST_ASSERTION_TIME=3,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,RESET_REQUEST_PRESENT=0,RESET_REQ_EARLY_DSRT_TIME=1,RESET_REQ_WAIT_TIME=1,SYNC_DEPTH=2,USE_RESET_REQUEST_IN0=0,USE_RESET_REQUEST_IN1=0,USE_RESET_REQUEST_IN10=0,USE_RESET_REQUEST_IN11=0,USE_RESET_REQUEST_IN12=0,USE_RESET_REQUEST_IN13=0,USE_RESET_REQUEST_IN14=0,USE_RESET_REQUEST_IN15=0,USE_RESET_REQUEST_IN2=0,USE_RESET_REQUEST_IN3=0,USE_RESET_REQUEST_IN4=0,USE_RESET_REQUEST_IN5=0,USE_RESET_REQUEST_IN6=0,USE_RESET_REQUEST_IN7=0,USE_RESET_REQUEST_IN8=0,USE_RESET_REQUEST_IN9=0,USE_RESET_REQUEST_INPUT=0"
+   instancePathKey="FB_Streaminoutqsys:.:rst_controller"
+   kind="altera_reset_controller"
+   version="22.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/22.1std/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="FB_Streaminoutqsys" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 3 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>FB_Streaminoutqsys</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="FB_Streaminout_internal:1.0:"
+   instancePathKey="FB_Streaminoutqsys:.:Streaminout_0:.:FB_Streaminout_internal_inst"
+   kind="FB_Streaminout_internal"
+   version="1.0"
+   name="FB_Streaminout_internal">
+  <generatedFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/dspba_library_ver.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_data_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_altera_syncram_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_scfifo_wrapped.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_decoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ecc_encoder.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_ll_ram_fifo.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_valid_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_staging_reg.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mid_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_one_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_latency_zero_ram_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_fifo_zero_width.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_high_speed_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_low_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_zero_latency_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_fanout_pipeline.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_std_synchronizer_nocut.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_decr_threshold.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_tessellated_incr_lookahead.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_handler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_lfsr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_mlab_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_parameter_assert.svh"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pop.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_push.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_token_fifo_counter.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_pipeline.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_dspba_buffer.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_enable_sink.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_memory_depth_quantization_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iord_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_shift_register_no_reset.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_latency.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_iowr_stall_valid.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_loop_profiler.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/hld_sim_latency_tracker.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/acl_reset_wire.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function_wrapper.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_function.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B0_runOnce_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B0_runOnce_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000mpop_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pop_token_i1_0000_fb_streaminout0_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000push_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_token_i10000_fb_streaminout1_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_branch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_bb_B1_start_stall_region.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_B1_start_merge_reg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_a_unnamed_fb_st0000out3_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iord_bl_call_fb_streami0000out2_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_b_unnamed_fb_st0000out4_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_iowr_bl_return_fb_strea0000out5_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_s_c0_in_wt_entry_fb0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_sfc_exit_s_c00000exit_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_sfc_logic_s_c0_in_wt_en0000ter1_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep_going_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_push_i1_notexitcond_fb_streaminout0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000g_fb_streaminout1_sr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_i_llvm_fpga_pipeline_keep0000eaminout1_valid_fifo.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/db/ip/FB_Streaminoutqsys/submodules/FB_Streaminout_internal.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/soleimanmanteghi/intelFPGA/SDFProject/task/initialalwasy/Quartus/FB_Streaminout/FB_Streaminout_internal_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="FB_Streaminoutqsys_Streaminout_0"
+     as="FB_Streaminout_internal_inst" />
+  <instantiator
+     instantiator="FB_Streaminoutqsys_Streaminout_1"
+     as="FB_Streaminout_internal_inst" />
+  <instantiator
+     instantiator="FB_Streaminoutqsys_Streaminout_2"
+     as="FB_Streaminout_internal_inst" />
+  <messages>
+   <message level="Debug" culprit="FB_Streaminoutqsys">queue size: 2 starting:FB_Streaminout_internal "submodules/FB_Streaminout_internal"</message>
+   <message level="Info" culprit="FB_Streaminout_internal_inst"><![CDATA["<b>Streaminout_0</b>" instantiated <b>FB_Streaminout_internal</b> "<b>FB_Streaminout_internal_inst</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,0 +1,1813 @@
+{
+  "3279352088":
+  {
+    "nodes":
+    [
+      {
+        "name":"ihc.B0"
+        , "id":3280085632
+        , "start":"0"
+        , "end":"2"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"RD"
+            , "id":3297858288
+            , "start":"2"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"call.ihc"
+                , "Stall-free":"No"
+                , "Start Cycle":"2"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":""
+                  , "line":0
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"?"
+            , "id":3285594240
+            , "start":"1"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":""
+                  , "line":0
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"ihc.B1"
+        , "id":3280085920
+        , "start":"2"
+        , "end":"12"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 1"
+            , "id":3283236448
+            , "start":"3"
+            , "end":"6"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_while_body_ihcs_c0_enter1_ihc1"
+                , "Cluster Type":"Stall-Enable"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"3"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Exit"
+                , "id":3294791600
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"?"
+            , "id":3285416240
+            , "start":"6"
+            , "end":"7"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"4"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":68
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3285502688
+            , "start":"7"
+            , "end":"8"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s1"
+                , "Stall-free":"No"
+                , "Start Cycle":"5"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":67
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3284750192
+            , "start":"8"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s1"
+                , "Stall-free":"No"
+                , "Start Cycle":"6"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":68
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"?"
+            , "id":3283572080
+            , "start":"8"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"6"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":71
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3283108112
+            , "start":"9"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s4"
+                , "Stall-free":"No"
+                , "Start Cycle":"7"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":70
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3283405504
+            , "start":"10"
+            , "end":"10"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s4"
+                , "Stall-free":"No"
+                , "Start Cycle":"8"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":71
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3283970800
+            , "start":"9"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s3"
+                , "Stall-free":"No"
+                , "Start Cycle":"7"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":69
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":3284750192
+        , "to":3283108112
+      }
+      , {
+        "from":3284750192
+        , "to":3283405504
+      }
+      , {
+        "from":3283572080
+        , "to":3283108112
+      }
+      , {
+        "from":3285416240
+        , "to":3285502688
+      }
+      , {
+        "from":3285502688
+        , "to":3284750192
+      }
+      , {
+        "from":3280085632
+        , "to":3280085920
+      }
+      , {
+        "from":3283236448
+        , "to":3283572080
+      }
+      , {
+        "from":3283236448
+        , "to":3285416240
+      }
+      , {
+        "from":3283108112
+        , "to":3283405504
+      }
+    ]
+  }
+  , "3279820264":
+  {
+    "nodes":
+    [
+      {
+        "name":"ihc_1.B0"
+        , "id":3280086464
+        , "start":"0"
+        , "end":"2"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"?"
+            , "id":3289029984
+            , "start":"1"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":""
+                  , "line":0
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3284060832
+            , "start":"2"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"call.ihc_1"
+                , "Stall-free":"No"
+                , "Start Cycle":"2"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":""
+                  , "line":0
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"ihc_1.B1"
+        , "id":3280111312
+        , "start":"2"
+        , "end":"15"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 2"
+            , "id":3284072704
+            , "start":"3"
+            , "end":"8"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_while_body_ihc_1s_c0_enter1_ihc_11"
+                , "Cluster Type":"Stall-Enable"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Exit"
+                , "id":3299760096
+                , "start":"8"
+                , "end":"8"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"?"
+            , "id":3297663584
+            , "start":"8"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"6"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":62
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3296756320
+            , "start":"9"
+            , "end":"10"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"7"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":59
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3297355072
+            , "start":"10"
+            , "end":"11"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"8"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":60
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3292474160
+            , "start":"11"
+            , "end":"12"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"9"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":61
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"RD"
+            , "id":3296820576
+            , "start":"12"
+            , "end":"13"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"10"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":62
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3288877344
+            , "start":"13"
+            , "end":"13"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s3"
+                , "Stall-free":"No"
+                , "Start Cycle":"11"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":63
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":3296820576
+        , "to":3288877344
+      }
+      , {
+        "from":3292474160
+        , "to":3296820576
+      }
+      , {
+        "from":3296756320
+        , "to":3297355072
+      }
+      , {
+        "from":3297663584
+        , "to":3296756320
+      }
+      , {
+        "from":3297355072
+        , "to":3292474160
+      }
+      , {
+        "from":3280086464
+        , "to":3280111312
+      }
+      , {
+        "from":3284072704
+        , "to":3297663584
+      }
+    ]
+  }
+  , "3279821784":
+  {
+    "nodes":
+    [
+      {
+        "name":"ihc_2.B0"
+        , "id":3280115392
+        , "start":"0"
+        , "end":"2"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"RD"
+            , "id":3292244704
+            , "start":"2"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"call.ihc_2"
+                , "Stall-free":"No"
+                , "Start Cycle":"2"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":""
+                  , "line":0
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"?"
+            , "id":3289003440
+            , "start":"1"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"ihc_2.B1"
+        , "id":3280127680
+        , "start":"2"
+        , "end":"18"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 3"
+            , "id":3284878768
+            , "start":"3"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_while_body_ihc_2s_c0_enter1_ihc_21"
+                , "Cluster Type":"Stall-Enable"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"6"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Exit"
+                , "id":3301540752
+                , "start":"9"
+                , "end":"9"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Start Cycle":"7"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"?"
+            , "id":3288488320
+            , "start":"10"
+            , "end":"11"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"8"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":42
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 4"
+            , "id":3285076272
+            , "start":"9"
+            , "end":"11"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_while_body_ihc_2s_c1_enter_ihc_26"
+                , "Cluster Type":"Stall-Enable"
+                , "Cluster Start Cycle":"7"
+                , "Cluster Latency":"2"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"'cnt'"
+                , "id":3297090320
+                , "start":"10"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"'cnt'"
+                    , "Start Cycle":"8"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":20
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":3296374560
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"9"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":3296374208
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Start Cycle":"9"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":3296373504
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Start Cycle":"9"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":21
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":3296374912
+                , "start":"11"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Start Cycle":"9"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":3296375264
+                , "start":"12"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"10"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Xor"
+                , "id":3296373856
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Xor"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"9"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":21
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":3301448592
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Start Cycle":"9"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"RD"
+            , "id":3289040320
+            , "start":"14"
+            , "end":"14"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s0"
+                , "Stall-free":"No"
+                , "Start Cycle":"12"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":38
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"+"
+            , "id":3296200400
+            , "start":"14"
+            , "end":"14"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"32-bit Integer Add"
+                , "Constant Operand":"1 (0x1)"
+                , "Start Cycle":"12"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":48
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Select"
+            , "id":3288628608
+            , "start":"15"
+            , "end":"15"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"32-bit Select"
+                , "Start Cycle":"13"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3300162496
+            , "start":"16"
+            , "end":"16"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s1"
+                , "Stall-free":"No"
+                , "Start Cycle":"14"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":40
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3286388832
+            , "start":"15"
+            , "end":"15"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"13"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":41
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3294551472
+            , "start":"16"
+            , "end":"16"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"14"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":42
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3288858672
+            , "start":"11"
+            , "end":"11"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"9"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":25
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3297377904
+            , "start":"12"
+            , "end":"12"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"10"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":26
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3288628960
+            , "start":"13"
+            , "end":"13"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"11"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":29
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3288053344
+            , "start":"14"
+            , "end":"14"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s2"
+                , "Stall-free":"No"
+                , "Start Cycle":"12"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":30
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"?"
+            , "id":3283684560
+            , "start":"10"
+            , "end":"11"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"8"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":40
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3289047264
+            , "start":"11"
+            , "end":"11"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s1"
+                , "Stall-free":"No"
+                , "Start Cycle":"9"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":24
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3296200752
+            , "start":"12"
+            , "end":"12"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"32 bits"
+                , "Depth":"8"
+                , "Stream Name":"s1"
+                , "Stall-free":"No"
+                , "Start Cycle":"10"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":28
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":3297377904
+        , "to":3288628960
+      }
+      , {
+        "from":3288858672
+        , "to":3297377904
+      }
+      , {
+        "from":3288628608
+        , "to":3286388832
+      }
+      , {
+        "from":3288628608
+        , "to":3294551472
+      }
+      , {
+        "from":3288628608
+        , "to":3300162496
+      }
+      , {
+        "from":3289040320
+        , "to":3296200400
+      }
+      , {
+        "from":3284878768
+        , "to":3283684560
+      }
+      , {
+        "from":3284878768
+        , "to":3285076272
+      }
+      , {
+        "from":3284878768
+        , "to":3288488320
+      }
+      , {
+        "from":3283684560
+        , "to":3289047264
+      }
+      , {
+        "from":3288488320
+        , "to":3288858672
+      }
+      , {
+        "from":3297090320
+        , "to":3296373504
+      }
+      , {
+        "from":3297090320
+        , "to":3296374208
+      }
+      , {
+        "from":3297090320
+        , "to":3296374560
+      }
+      , {
+        "from":3296374912
+        , "to":3296375264
+      }
+      , {
+        "from":3280115392
+        , "to":3280127680
+      }
+      , {
+        "from":3296374208
+        , "to":3296374912
+      }
+      , {
+        "from":3296374208
+        , "to":3301448592
+      }
+      , {
+        "from":3285076272
+        , "to":3286388832
+      }
+      , {
+        "from":3285076272
+        , "to":3288053344
+      }
+      , {
+        "from":3285076272
+        , "to":3288628608
+      }
+      , {
+        "from":3285076272
+        , "to":3288628960
+      }
+      , {
+        "from":3285076272
+        , "to":3288858672
+      }
+      , {
+        "from":3285076272
+        , "to":3289040320
+      }
+      , {
+        "from":3285076272
+        , "to":3289047264
+      }
+      , {
+        "from":3285076272
+        , "to":3294551472
+      }
+      , {
+        "from":3285076272
+        , "to":3296200752
+      }
+      , {
+        "from":3285076272
+        , "to":3297377904
+      }
+      , {
+        "from":3285076272
+        , "to":3300162496
+      }
+      , {
+        "from":3288628960
+        , "to":3288053344
+      }
+      , {
+        "from":3286388832
+        , "to":3294551472
+      }
+      , {
+        "from":3296373504
+        , "to":3296373856
+      }
+      , {
+        "from":3296373504
+        , "to":3296374912
+      }
+      , {
+        "from":3296373504
+        , "to":3301448592
+      }
+      , {
+        "from":3289047264
+        , "to":3296200752
+      }
+      , {
+        "from":3296200400
+        , "to":3288628608
+      }
+      , {
+        "from":3296373856
+        , "to":3301448592
+      }
+      , {
+        "from":3296374560
+        , "to":3296375264
+      }
+    ]
+  }
+  , "3279825672":
+  {
+    "nodes":
+    [
+      {
+        "name":"SDF_HLS_component.B0.runOnce"
+        , "id":3280128352
+        , "start":"0"
+        , "end":"2"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"WR"
+            , "id":3288295008
+            , "start":"2"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"call.ihc_1"
+                , "Stall-free":"No"
+                , "Start Cycle":"2"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":91
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"?"
+            , "id":3288010160
+            , "start":"1"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3287759296
+            , "start":"2"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"call.ihc_2"
+                , "Stall-free":"No"
+                , "Start Cycle":"2"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":90
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3282736608
+            , "start":"2"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Write"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"call.ihc"
+                , "Stall-free":"No"
+                , "Start Cycle":"2"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":92
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"SDF_HLS_component.B1.start"
+        , "id":3280154224
+        , "start":"2"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"RD"
+            , "id":3292606816
+            , "start":"3"
+            , "end":"3"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Stream Read"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"call.SDF_HLS_component"
+                , "Stall-free":"No"
+                , "Start Cycle":"1"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":89
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"WR"
+            , "id":3283342880
+            , "start":"3"
+            , "end":"3"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Non-Blocking Stream Write"
+                , "Width":"1 bit"
+                , "Depth":"0"
+                , "Stream Name":"return.SDF_HLS_component"
+                , "Stall-free":"No"
+                , "Start Cycle":"1"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                  , "line":94
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 0"
+            , "id":3282664784
+            , "start":"3"
+            , "end":"3"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_wt_entry_sdf_hls_components_c0_enter1_sdf_hls_component0"
+                , "Cluster Type":"Stall-Enable"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"0"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Exit"
+                , "id":3283337024
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":3292606816
+        , "to":3283342880
+      }
+      , {
+        "from":3280128352
+        , "to":3280154224
+      }
+    ]
+  }
+}

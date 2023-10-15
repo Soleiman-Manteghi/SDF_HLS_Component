@@ -1,0 +1,1281 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Component: SDF_HLS_component"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+            , "line":89
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"SDF_HLS_component.B1.start"
+          , "data":
+          ["Yes", "~1", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"89"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Task: ihc"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":""
+            , "line":0
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ihc.B1"
+          , "data":
+          ["Yes", "~4", "0"]
+          , "debug":
+          [
+            [
+              {
+                "filename":""
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Memory dependency"
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"67"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"68"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"70"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"71"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Most critical loop feedback path during scheduling:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"1.00 clock cycle Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"67"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"69"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"67"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"68"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"70"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"84"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"71"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Task: ihc_1"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":""
+            , "line":0
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ihc_1.B1"
+          , "data":
+          ["Yes", "~6", "0"]
+          , "debug":
+          [
+            [
+              {
+                "filename":""
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Memory dependency"
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"59"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"62"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Most critical loop feedback path during scheduling:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"1.00 clock cycle Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"60"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"1.00 clock cycle Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"59"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"1.00 clock cycle Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"61"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"59"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"60"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"61"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"62"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"80"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"63"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Task: ihc_2"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":""
+            , "line":0
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ihc_2.B1"
+          , "data":
+          ["Yes", "~7", "0"]
+          , "debug":
+          [
+            [
+              {
+                "filename":""
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Memory dependency"
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"24"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Stream Write Operation (%L > %L > %L > %L, %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"40"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"49"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"25"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Stream Write Operation (%L > %L > %L > %L, %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"42"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"51"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L, %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"38"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"845"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"47"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"24"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"25"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"28"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"26"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"29"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L, %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"40"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"49"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"30"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L, %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"41"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"50"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L, %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"76"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"42"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                      , "line":"853"
+                    }
+                    , {
+                      "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                      , "line":"51"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+  ]
+}

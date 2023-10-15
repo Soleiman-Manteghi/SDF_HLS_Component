@@ -1,0 +1,45 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/QuartusMT/SDF_HLS_componentqsys.qsys" --block-symbol-file --output-directory="/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/QuartusMT/SDF_HLS_componentqsys" --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading QuartusMT/SDF_HLS_componentqsys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding component_0 [SDF_HLS_component 1.0]
+Progress: Reading input file
+Progress: Adding SDF_HLS_component_internal_inst [SDF_HLS_component_internal 1.0]
+Progress: Parameterizing module SDF_HLS_component_internal_inst
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module component_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: SDF_HLS_componentqsys.component_0.s0: component_0.s0 must be connected to an Avalon-ST source
+Warning: SDF_HLS_componentqsys.component_0.s4: component_0.s4 must be connected to an Avalon-ST sink
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/QuartusMT/SDF_HLS_componentqsys.qsys" --synthesis=VERILOG --output-directory="/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/QuartusMT/SDF_HLS_componentqsys/synthesis" --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading QuartusMT/SDF_HLS_componentqsys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding component_0 [SDF_HLS_component 1.0]
+Progress: Parameterizing module component_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: SDF_HLS_componentqsys.component_0.s0: component_0.s0 must be connected to an Avalon-ST source
+Warning: SDF_HLS_componentqsys.component_0.s4: component_0.s4 must be connected to an Avalon-ST sink
+Info: SDF_HLS_componentqsys: Generating SDF_HLS_componentqsys "SDF_HLS_componentqsys" for QUARTUS_SYNTH
+Info: component_0: "SDF_HLS_componentqsys" instantiated SDF_HLS_component "component_0"
+Info: rst_controller: "SDF_HLS_componentqsys" instantiated altera_reset_controller "rst_controller"
+Info: SDF_HLS_component_internal_inst: "component_0" instantiated SDF_HLS_component_internal "SDF_HLS_component_internal_inst"
+Info: SDF_HLS_componentqsys: Done "SDF_HLS_componentqsys" with 4 modules, 214 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

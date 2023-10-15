@@ -1,0 +1,117 @@
+{
+  "nodes":
+  [
+    {
+      "name":"ihc"
+      , "id":3279352088
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"ihc.B1"
+          , "id":3280085920
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":3283236448
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ihc.B0"
+          , "id":3280085632
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ihc_2"
+      , "id":3279821784
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"ihc_2.B1"
+          , "id":3280127680
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":3285076272
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":3284878768
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ihc_2.B0"
+          , "id":3280115392
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"SDF_HLS_component"
+      , "id":3279825672
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"SDF_HLS_component.B1.start"
+          , "id":3280154224
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3282664784
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"SDF_HLS_component.B0.runOnce"
+          , "id":3280128352
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ihc_1"
+      , "id":3279820264
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"ihc_1.B0"
+          , "id":3280086464
+          , "type":"bb"
+        }
+        , {
+          "name":"ihc_1.B1"
+          , "id":3280111312
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":3284072704
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

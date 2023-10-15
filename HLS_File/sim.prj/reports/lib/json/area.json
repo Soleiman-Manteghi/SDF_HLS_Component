@@ -1,0 +1,2002 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [1.16035, 0.773008, 0.463166, 0, 0]
+  , "total":
+  [687, 1015, 0, 0, 8]
+  , "name":"System"
+  , "max_resources":
+  [109572, 219144, 514, 112, 5478]
+  , "children":
+  [
+    {
+      "name":"SDF_HLS_component"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.0241996, 0.0209908, 0.00593217, 0, 0]
+      , "total_kernel_resources":
+      [23, 13, 0, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Component call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"1b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Component return"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"1b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"SDF_HLS_component.B0.runOnce"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"SDFgraph.cpp:90 > _task.h:136 > \n_task.h:113 > _task.h:74 > \n_task_FPGA.h:62"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":90
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"SDFgraph.cpp:91 > _task.h:136 > \n_task.h:113 > _task.h:74 > \n_task_FPGA.h:62"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":91
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"SDFgraph.cpp:92 > _task.h:136 > \n_task.h:113 > _task.h:74 > \n_task_FPGA.h:62"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":92
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"SDF_HLS_component.B1.start"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [7, 7, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"SDFgraph.cpp:89"
+                  , "type":"resource"
+                  , "data":
+                  [7, 7, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":89
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1, 0, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"SDFgraph.cpp:89"
+                  , "type":"resource"
+                  , "data":
+                  [3, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":89
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"SDFgraph.cpp:94"
+                  , "type":"resource"
+                  , "data":
+                  [3, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":94
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Non-Blocking Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ihc"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.238333, 0.171577, 0.085332, 0, 0]
+      , "total_kernel_resources":
+      [168, 187, 0, 0, 1]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Stream 's1'"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Stream 's3'"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Stream 's4'"
+          , "type":"resource"
+          , "data":
+          [10, 18, 0, 0, 1]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 8 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 8 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Task call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"1b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"ihc.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"_task.h:104"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"ihc.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [22, 42, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [22, 42, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [83, 57, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [10, 10, 0, 0, 0]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:84 > \nSDFgraph.cpp:68 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [24, 17, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":68
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:84 > \nSDFgraph.cpp:71 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [49, 30, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1, 0, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"_task.h:106 > SDFgraph.cpp:84 > \nSDFgraph.cpp:67 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [20, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":67
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [20, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:84 > \nSDFgraph.cpp:68 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [23, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":68
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [23, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:84 > \nSDFgraph.cpp:69 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [2, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":69
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:84 > \nSDFgraph.cpp:70 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":70
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:84 > \nSDFgraph.cpp:71 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ihc_1"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.265153, 0.184354, 0.0999343, 0, 0]
+      , "total_kernel_resources":
+      [162, 219, 0, 0, 2]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Stream 's2'"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Stream 's3'"
+          , "type":"resource"
+          , "data":
+          [10, 18, 0, 0, 1]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 8 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 8 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Task call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"1b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"ihc_1.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"_task.h:104"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"ihc_1.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [5, 11, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [5, 11, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [59, 56, 0, 0, 1]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [12, 12, 0, 0, 0]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:80 > \nSDFgraph.cpp:62 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [47, 44, 0, 0, 1]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1, 0, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"_task.h:106 > SDFgraph.cpp:80 > \nSDFgraph.cpp:59 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [20, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":59
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [20, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:80 > \nSDFgraph.cpp:60 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [20, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":60
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [20, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:80 > \nSDFgraph.cpp:61 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [20, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":61
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [20, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:80 > \nSDFgraph.cpp:62 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [23, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":62
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [23, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:80 > \nSDFgraph.cpp:63 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":63
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ihc_2"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.632669, 0.396087, 0.271967, 0, 0]
+      , "total_kernel_resources":
+      [334, 596, 0, 0, 5]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Stream 's0'"
+          , "type":"resource"
+          , "data":
+          [10, 18, 0, 0, 1]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 8 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 8 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Stream 's1'"
+          , "type":"resource"
+          , "data":
+          [10, 18, 0, 0, 1]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 8 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 8 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Stream 's2'"
+          , "type":"resource"
+          , "data":
+          [10, 18, 0, 0, 1]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 8 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"32b wide with 8 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Task call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"1b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'cnt' (SDFgraph.cpp:20)"
+          , "type":"resource"
+          , "data":
+          [31, 240, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"SDFgraph.cpp"
+                , "line":20
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 bits and depth 7"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":" Depth was increased by a factor of 7 due to a loop initiation interval of 7."
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width by 7 depth"
+            }
+          ]
+        }
+        , {
+          "name":"ihc_2.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"_task.h:104"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"ihc_2.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [57, 163, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [57, 163, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [116, 113, 0, 0, 2]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"_task.h:104 > SDFgraph.cpp:20"
+                  , "type":"resource"
+                  , "data":
+                  [14, 13, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":20
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:40 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [25.5, 25, 0, 0, 0.5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":40
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:42 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [25.5, 25, 0, 0, 0.5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":42
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:49 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [25.5, 25, 0, 0, 0.5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":49
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:51 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [25.5, 25, 0, 0, 0.5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":51
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [14, 7, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [16, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:21"
+                  , "type":"resource"
+                  , "data":
+                  [11, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":21
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:24 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":24
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:25 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":25
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:26 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":26
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:28 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":28
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:29 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":29
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:30 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":30
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:35"
+                  , "type":"resource"
+                  , "data":
+                  [11, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":35
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:38 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:40 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":40
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:41 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":41
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:42 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":42
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:46"
+                  , "type":"resource"
+                  , "data":
+                  [17, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":46
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:47 > _stream.h:845"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":47
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:49 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":49
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:50 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":50
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"_task.h:106 > SDFgraph.cpp:76 > \nSDFgraph.cpp:51 > _stream.h:853"
+                  , "type":"resource"
+                  , "data":
+                  [1.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                        , "line":51
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

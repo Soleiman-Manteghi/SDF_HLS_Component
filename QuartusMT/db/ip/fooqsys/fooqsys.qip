@@ -1,0 +1,327 @@
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_TOOL_VERSION "22.1"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "fooqsys" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../../fooqsys.sopcinfo"]
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name SLD_INFO "QSYS_NAME fooqsys HAS_SOPCINFO 1 GENERATION_ID 1694461849"
+set_global_assignment -library "fooqsys" -name SLD_FILE [file join $::quartus(qip_path) "fooqsys.debuginfo"]
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_QSYS_MODE "SYSTEM"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "fooqsys" -name MISC_FILE [file join $::quartus(qip_path) "../../../fooqsys.qsys"]
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_NAME "Zm9vcXN5cw=="
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_DISPLAY_NAME "Zm9vcXN5cw=="
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY5NDQ2MTg0OQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRUJBNlUyM0k3::QXV0byBERVZJQ0U="
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nw==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "fooqsys" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_NAME "YWx0ZXJhX3Jlc2V0X2NvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIFJlc2V0IENvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_VERSION "MjIuMQ=="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_DESCRIPTION "Rm9yIHN5c3RlbXMgd2l0aCBtdWx0aXBsZSByZXNldCBpbnB1dHMsIHRoZSBNZXJsaW4gUmVzZXQgQ29udHJvbGxlciBPUnMgYWxsIHJlc2V0IGlucHV0cyBhbmQgZ2VuZXJhdGVzIGEgc2luZ2xlIHJlc2V0IG91dHB1dC4="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "TlVNX1JFU0VUX0lOUFVUUw==::MQ==::TnVtYmVyIG9mIGlucHV0cw=="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "T1VUUFVUX1JFU0VUX1NZTkNfRURHRVM=::ZGVhc3NlcnQ=::T3V0cHV0IFJlc2V0IFN5bmNocm9ub3VzIEVkZ2Vz"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "U1lOQ19ERVBUSA==::Mg==::U3luY2hyb25pemVyIGRlcHRo"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRVUVTVF9QUkVTRU5U::MA==::UmVzZXQgcmVxdWVzdCBsb2dpYyBlbmFibGU="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX1dBSVRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCB3YWl0IHRpbWU="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "TUlOX1JTVF9BU1NFUlRJT05fVElNRQ==::Mw==::TWluaW11bSByZXNldCBhc3NlcnRpb24gdGltZQ=="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX0VBUkxZX0RTUlRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCBkZWFzc2VydCB0aW1pbmc="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4w::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjA="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4x::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4y::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjI="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4z::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjM="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU40::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjQ="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU41::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjU="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU42::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjY="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU43::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjc="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU44::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjg="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU45::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjk="
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEw"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEx"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMg==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEy"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMw==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEz"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE0"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE1"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU5QVVQ=::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcmVzZXRfaW5wdXRz"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QURBUFRfUkVTRVRfUkVRVUVTVA==::MA==::T25seSBhZGFwdCBvbmx5IHJlc2V0IHJlcXVlc3Q="
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_NAME "Zm9vcXN5c19mb29fMA=="
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_DISPLAY_NAME "Zm9v"
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY5NDQ2MTg0OQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19VTklRVUVfSUQ=::Zm9vcXN5c19mb29fMA==::QXV0byBVTklRVUVfSUQ="
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRUJBNlUyM0k3::QXV0byBERVZJQ0U="
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nw==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19DTE9DS19DTE9DS19SQVRF::NTAwMDAwMDA=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19DTE9DS19DTE9DS19ET01BSU4=::MQ==::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "fooqsys_foo_0" -library "fooqsys" -name IP_COMPONENT_PARAMETER "QVVUT19DTE9DS19SRVNFVF9ET01BSU4=::MQ==::QXV0byBSRVNFVF9ET01BSU4="
+set_instance_assignment -entity "foo_internal" -library "fooqsys" -name AUTO_SHIFT_REGISTER_RECOGNITION OFF -to *_NO_SHIFT_REG*
+set_global_assignment -entity "foo_internal" -library "fooqsys" -name IP_COMPONENT_NAME "Zm9vX2ludGVybmFs"
+set_global_assignment -entity "foo_internal" -library "fooqsys" -name IP_COMPONENT_DISPLAY_NAME "Zm9vX2ludGVybmFs"
+set_global_assignment -entity "foo_internal" -library "fooqsys" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "foo_internal" -library "fooqsys" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "foo_internal" -library "fooqsys" -name IP_COMPONENT_VERSION "MS4w"
+
+set_global_assignment -library "fooqsys" -name VERILOG_FILE [file join $::quartus(qip_path) "fooqsys.v"]
+set_global_assignment -library "fooqsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "fooqsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "fooqsys" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "fooqsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/fooqsys_foo_0.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/dspba_library_ver.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_ecc_pkg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_data_fifo.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_fifo.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_altera_syncram_wrapped.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_scfifo_wrapped.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_ecc_decoder.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_ecc_encoder.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_ll_fifo.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_ll_ram_fifo.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_valid_fifo_counter.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_dspba_valid_fifo_counter.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_staging_reg.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_mid_speed_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_latency_one_ram_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_latency_zero_ram_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_fifo_zero_width.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_high_speed_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_low_latency_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_zero_latency_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_fanout_pipeline.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_std_synchronizer_nocut.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_tessellated_incr_decr_threshold.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_tessellated_incr_lookahead.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_reset_handler.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_lfsr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_mlab_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_parameter_assert.svh"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_pop.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_push.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_token_fifo_counter.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_pipeline.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_dspba_buffer.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_enable_sink.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_memory_depth_quantization_pkg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_iord.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_iord_stall_latency.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_iord_stall_valid.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_shift_register_no_reset.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_iowr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_iowr_stall_latency.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_iowr_stall_valid.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_loop_profiler.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hld_sim_latency_tracker.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_full_detector.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_tessellated_incr_decr_decr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_loop_limiter.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/acl_reset_wire.v"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_function_wrapper.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_function.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_B0_runOnce.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_B0_runOnce_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_B0_runOnce_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_0_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_1_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_B0_runOnce_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_B0_runOnce_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_B1_start.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_B1_start_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_B1_start_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_call_unnamed_foo2_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_return_task_1_unnamed_6_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_return_task_2_unnamed_7_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_return_task_3_unnamed_8_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_call_task_1_unnamed_3_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_call_task_2_unnamed_4_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_call_task_3_unnamed_5_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_return_unnamed_foo9_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_s_c0_in_wt_entry_s_c0_enter1_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_wt_entry_s_c0_exit_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_logic_s_c0_in_wt_entry_s_c0_enter1_foo0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_notexitcond_0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_B1_start_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_B1_start_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_1_sr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_1_valid_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_function.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B0_runOnce.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B0_runOnce_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_task_10_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_task_11_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B0_runOnce_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B0_runOnce_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B0_runOnce_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B1_start.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B1_start_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_call_task_1_unnamed_task_12_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B1_start_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_s_c0_in_wt_entry_task_1s_c0_enter1_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_wt_ent0000k_1s_c0_exit_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_logic_s_c0_in_wt_entry_task_1s_c0_enter1_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_notexitcond3_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B1_start_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B1_start_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B2.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B2_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_s0_unnamed_task_13_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_s1_unnamed_task_14_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_s_c0_in_for_body_i_task_1s_c0_enter52_task_11.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000_1s_c0_exit7_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000ask_11_full_detector.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000t7_task_11_data_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_logic_s_c0_in_for_body_i_task_1s_c0_enter52_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i2_cleanups_pop7_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i2_initerations_pop6_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i9_fpga_indvars_iv_pop5_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_lastiniteration_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_notexitcond_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i2_cleanups_push7_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i2_initerations_push6_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i9_fpga_indvars_iv_push5_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B2_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B2_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B2_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B3.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B3_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_return_task_1_unnamed_task_15_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B3_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_1_B3_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_11_sr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_11_valid_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_16_sr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_16_valid_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_loop_limiter_task_10.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B2_sr_1.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_1_B3_sr_0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_function.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B0_runOnce.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B0_runOnce_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_task_20_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_task_21_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B0_runOnce_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B0_runOnce_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B0_runOnce_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B1_start.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B1_start_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_call_task_2_unnamed_task_22_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B1_start_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_s_c0_in_wt_entry_task_2s_c0_enter1_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_wt_ent0000k_2s_c0_exit_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_logic_s_c0_in_wt_entry_task_2s_c0_enter1_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_notexitcond3_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B1_start_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B1_start_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B2.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B2_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_s1_unnamed_task_23_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_s2_unnamed_task_24_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_s_c0_in_for_body_i_task_2s_c0_enter52_task_21.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000_2s_c0_exit7_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000ask_21_full_detector.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000t7_task_21_data_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_logic_s_c0_in_for_body_i_task_2s_c0_enter52_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i2_cleanups_pop7_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i2_initerations_pop6_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i9_fpga_indvars_iv_pop5_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_lastiniteration_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_notexitcond_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i2_cleanups_push7_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i2_initerations_push6_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i9_fpga_indvars_iv_push5_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B2_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B2_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B2_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B3.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B3_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_return_task_2_unnamed_task_25_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B3_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_2_B3_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_21_sr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_21_valid_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_26_sr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_26_valid_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_loop_limiter_task_20.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B2_sr_1.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_2_B3_sr_0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_function.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B0_runOnce.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B0_runOnce_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_token_i1_wt_limpop_task_30_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_token_i1_wt_limpush_task_31_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B0_runOnce_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B0_runOnce_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B0_runOnce_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B1_start.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B1_start_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_call_task_3_unnamed_task_32_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B1_start_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_s_c0_in_wt_entry_task_3s_c0_enter1_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_wt_ent0000k_3s_c0_exit_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_logic_s_c0_in_wt_entry_task_3s_c0_enter1_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_notexitcond3_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B1_start_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B1_start_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B2.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B2_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iord_bl_s2_unnamed_task_33_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_s3_unnamed_task_34_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_s_c0_in_for_body_i_task_3s_c0_enter52_task_31.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000_3s_c0_exit7_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000ask_31_full_detector.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_sfc_exit_s_c0_out_for_bo0000t7_task_31_data_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_sfc_logic_s_c0_in_for_body_i_task_3s_c0_enter52_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i2_cleanups_pop7_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i2_initerations_pop6_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pop_i9_fpga_indvars_iv_pop5_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_lastiniteration_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i1_notexitcond_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i2_cleanups_push7_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i2_initerations_push6_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_push_i9_fpga_indvars_iv_push5_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B2_merge_reg.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B2_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B2_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B3.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B3_stall_region.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_iowr_bl_return_task_3_unnamed_task_35_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B3_branch.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_task_3_B3_merge.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_31_sr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going2_task_31_valid_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_36_sr.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_i_llvm_fpga_pipeline_keep_going_task_36_valid_fifo.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_loop_limiter_task_30.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B2_sr_1.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_bb_task_3_B3_sr_0.sv"]
+set_global_assignment -library "fooqsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/foo_internal.v"]
+
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_TOOL_VERSION "22.1"
+set_global_assignment -entity "altera_reset_controller" -library "fooqsys" -name IP_TOOL_ENV "Qsys"

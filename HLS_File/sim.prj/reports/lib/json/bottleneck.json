@@ -1,0 +1,925 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"?"
+      , "id":4294967295
+      , "src":"3285416240"
+      , "dst":"3290550880"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"ihc.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"ihc.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                  , "line":"105"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"RD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"RD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":3285416240
+          , "start":"4.00"
+          , "parent":"ihc.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":68
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"RD"
+          , "id":3285502688
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":67
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"RD"
+          , "id":3284750192
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":68
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":3290550880
+          , "end":"9.00"
+          , "parent":"ihc.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":68
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":3285416240
+          , "to":3285502688
+        }
+        , {
+          "from":3285502688
+          , "to":3284750192
+        }
+        , {
+          "from":3284750192
+          , "to":3290550880
+        }
+        , {
+          "from":3285416240
+          , "to":3290550880
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"3283572080"
+      , "dst":"3289543568"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"ihc.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"ihc.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                  , "line":"105"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":3283572080
+          , "start":"6.00"
+          , "parent":"ihc.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":71
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3283108112
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":70
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3283405504
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":71
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":3289543568
+          , "end":"10.00"
+          , "parent":"ihc.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":71
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":3283572080
+          , "to":3283108112
+        }
+        , {
+          "from":3283108112
+          , "to":3283405504
+        }
+        , {
+          "from":3283405504
+          , "to":3289543568
+        }
+        , {
+          "from":3283572080
+          , "to":3289543568
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"3288488320"
+      , "dst":"3292120704"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"ihc_2.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"ihc_2.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                  , "line":"105"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":3288488320
+          , "start":"8.00"
+          , "parent":"ihc_2.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3288858672
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":25
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3297377904
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":26
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3288628960
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":29
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3288053344
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":30
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3286388832
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":41
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3294551472
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":3292120704
+          , "end":"16.00"
+          , "parent":"ihc_2.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":3288488320
+          , "to":3288858672
+        }
+        , {
+          "from":3288858672
+          , "to":3297377904
+        }
+        , {
+          "from":3297377904
+          , "to":3288628960
+        }
+        , {
+          "from":3288628960
+          , "to":3288053344
+        }
+        , {
+          "from":3286388832
+          , "to":3294551472
+        }
+        , {
+          "from":3294551472
+          , "to":3292120704
+        }
+        , {
+          "from":3288488320
+          , "to":3292120704
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"3283684560"
+      , "dst":"3288550848"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"ihc_2.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"ihc_2.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                  , "line":"105"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"WR(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"853"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":3283684560
+          , "start":"8.00"
+          , "parent":"ihc_2.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":40
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3289047264
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":24
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"WR"
+          , "id":3300162496
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":40
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":3288550848
+          , "end":"16.00"
+          , "parent":"ihc_2.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":40
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":3283684560
+          , "to":3289047264
+        }
+        , {
+          "from":3289047264
+          , "to":3300162496
+        }
+        , {
+          "from":3300162496
+          , "to":3288550848
+        }
+        , {
+          "from":3283684560
+          , "to":3288550848
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"3297663584"
+      , "dst":"3296822080"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"ihc_1.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"ihc_1.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_task.h"
+                  , "line":"105"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"RD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"RD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"RD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"RD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/soleimanmanteghi/intelFPGA/22.1std/hls/include/HLS/internal/_stream.h"
+                  , "line":"845"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":3297663584
+          , "start":"6.00"
+          , "parent":"ihc_1.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"RD"
+          , "id":3296756320
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"RD"
+          , "id":3297355072
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":3292473808
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"RD"
+          , "id":3292474160
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":61
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":3296820224
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":61
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"RD"
+          , "id":3296820576
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":3296822080
+          , "end":"13.00"
+          , "parent":"ihc_1.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/soleimanmanteghi/intelFPGA/SDFProject/Repository_SDF_implementation with HLS/HLS_File/SDFgraph.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":3297663584
+          , "to":3296756320
+        }
+        , {
+          "from":3296756320
+          , "to":3297355072
+        }
+        , {
+          "from":3297355072
+          , "to":3292474160
+        }
+        , {
+          "from":3292474160
+          , "to":3296820576
+        }
+        , {
+          "from":3296820576
+          , "to":3296822080
+        }
+        , {
+          "from":3297663584
+          , "to":3296822080
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}
